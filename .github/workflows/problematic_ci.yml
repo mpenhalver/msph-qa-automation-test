@@ -1,0 +1,40 @@
+# Workflow com problemas intencionais para demonstração
+name: Problematic CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    # ❌ Problema: Versão Python não especificada adequadamente
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+    
+    # ❌ Problema: Não usa cache para dependências
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        # ❌ Problema: requirements.txt pode não existir
+    
+    # ❌ Problema: Não instala browser para Selenium
+    - name: Run Selenium tests
+      run: |
+        python -m pytest demo_test_problematic.py -v
+        # ❌ Problema: Não configura display para headless
+    
+    # ❌ Problema: Não instala Robot Framework adequadamente
+    - name: Run Robot Framework tests
+      run: |
+        robot demo_test.robot
+        # ❌ Problema: Pode falhar se RF não estiver instalado
