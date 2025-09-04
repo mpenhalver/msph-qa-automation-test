@@ -5,7 +5,7 @@
 ### PASSO 1: Criar Repositório no GitHub
 1. Acesse https://github.com
 2. Clique em "New repository"
-3. Nome: `cogna-qa-test`
+3. Nome: `msph-qa-automation-test`
 4. Marque "Public"
 5. Clique "Create repository"
 
