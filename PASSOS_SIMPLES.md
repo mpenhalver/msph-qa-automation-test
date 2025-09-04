@@ -5,7 +5,7 @@
 ### PASSO 1: Criar Repositório no GitHub
 1. Acesse https://github.com
 2. Clique em "New repository"
-3. Nome: `cogna-qa-test`
+3. Nome: `msph-qa-automation-test`
 4. Marque "Public"
 5. Clique "Create repository"
 
@@ -14,7 +14,7 @@
 2. Clique "Install it for free"
 3. Selecione sua organização
 4. Escolha "Selected repositories"
-5. Selecione o repositório `cogna-qa-test`
+5. Selecione o repositório `msph-qa-automation-test`
 6. Clique "Install"
 
 ### PASSO 3: Subir Arquivos para o GitHub
@@ -28,7 +28,7 @@ git add .
 git commit -m "Initial commit"
 
 # Conectar com seu repositório (substitua SEU_USUARIO)
-git remote add origin https://github.com/SEU_USUARIO/cogna-qa-test.git
+git remote add origin https://github.com/SEU_USUARIO/msph-qa-automation-test.git
 git push -u origin main
 ```
 
