@@ -14,13 +14,13 @@
 2. Clique "Install it for free"
 3. Selecione sua organização
 4. Escolha "Selected repositories"
-5. Selecione o repositório `cogna-qa-test`
+5. Selecione o repositório `msph-qa-automation-test`
 6. Clique "Install"
 
 ### PASSO 3: Subir Arquivos para o GitHub
 ```bash
 # No terminal, dentro desta pasta:
-cd /Users/msph/Library/CloudStorage/OneDrive-amazon.com/_MyDocuments/Clientes/Cogna/Projetos/Qualidade/Cogna_Quality_Test
+cd /Users/msph/Quality_Test
 
 # Inicializar Git
 git init
@@ -28,7 +28,7 @@ git add .
 git commit -m "Initial commit"
 
 # Conectar com seu repositório (substitua SEU_USUARIO)
-git remote add origin https://github.com/SEU_USUARIO/cogna-qa-test.git
+git remote add origin https://github.com/SEU_USUARIO/msph-qa-automation-test.git
 git push -u origin main
 ```
 
